@@ -3,9 +3,10 @@ using Printf
 # Including solutions 
 include("day01/day01.jl")
 include("day02/day02.jl")
+include("day03/day03.jl")
 
 if isempty(ARGS)
-    global day = 2
+    global day = 3
 else
     try
         global day = parse(Int, ARGS[1])
@@ -26,6 +27,10 @@ if day == 1
     println("-> Part 2: "*string(part_2))
 elseif day == 2
     part_1, part_2 = Day02.run("day02/input.txt")
+    println("-> Part 1: "*string(part_1))
+    println("-> Part 2: "*string(part_2))
+elseif day == 3
+    part_1, part_2 = Day03.run("day03/input.txt")
     println("-> Part 1: "*string(part_1))
     println("-> Part 2: "*string(part_2))
 else

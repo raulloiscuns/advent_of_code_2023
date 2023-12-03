@@ -8,10 +8,11 @@ import (
 
 	"github.com/raulloiscuns/advent_of_code_2023/golang_solutions/day01"
 	"github.com/raulloiscuns/advent_of_code_2023/golang_solutions/day02"
+	"github.com/raulloiscuns/advent_of_code_2023/golang_solutions/day03"
 )
 
 func day() int {
-	last := 2
+	last := 3
 	if len(os.Args) == 1 {
 		return last
 	}
@@ -42,6 +43,9 @@ func main() {
 	case 2:
 		fmt.Printf("-> Part 1: %d\n", day02.Part1(filename))
 		fmt.Printf("-> Part 2: %d\n", day02.Part2(filename))
+	case 3:
+		fmt.Printf("-> Part 1: %d\n", day03.Part1(filename))
+		fmt.Printf("-> Part 2: %d\n", day03.Part2(filename))
 	}
 
 }
