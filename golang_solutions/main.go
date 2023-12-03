@@ -7,10 +7,11 @@ import (
 	"strconv"
 
 	"github.com/raulloiscuns/advent_of_code_2023/golang_solutions/day01"
+	"github.com/raulloiscuns/advent_of_code_2023/golang_solutions/day02"
 )
 
 func day() int {
-	last := 1
+	last := 2
 	if len(os.Args) == 1 {
 		return last
 	}
@@ -38,6 +39,9 @@ func main() {
 	case 1:
 		fmt.Printf("-> Part 1: %d\n", day01.Part1(filename))
 		fmt.Printf("-> Part 2: %d\n", day01.Part2(filename))
+	case 2:
+		fmt.Printf("-> Part 1: %d\n", day02.Part1(filename))
+		fmt.Printf("-> Part 2: %d\n", day02.Part2(filename))
 	}
 
 }
