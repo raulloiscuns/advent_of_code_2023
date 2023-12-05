@@ -5,6 +5,7 @@ This repo covers some [Go](https://go.dev/) and [Julia](https://julialang.org/) 
 1. [Trebuchet?!](#day-1-trebuchet)
 2. [Cube Conundrum](#day-2-cube-conundrum)
 3. [Gear Ratios](#day-3-gear-ratios)
+4. [Scratchcards](#day-4-scratchcards)
 
 ## Day 1: Trebuchet?!
 
@@ -23,3 +24,11 @@ The input is a list of strings of games results. In the game (each game is ident
 The input is a visual representation of an engine (engine schematic) by means of numbers and symbols.
 - Part 1: If any number adjacent to a symbol ("." do not count as symbol) is considered a part number, compute the sum of all of the part numbers in the engine schematic.
 - Part 2: If we define a gear as all the "*" symbols that are adjacent to exactly two part numbers and its gear ratio as the result of multiplying those two numbers together, compute the sum of all of the gear ratios in the engine schematic.
+
+## Day 4: Scratchcards
+
+The input is a list of cards of a scratchcards game, where the winning numbers and player's numbers are separated by a vertical bar. A match is made every time one number of the player is a winning number.
+
+- Part 1: If the first match makes the card worth one point and each match after the first doubles the point value of that card. Calculate how many points are all the cards worth in total.
+
+- Part 2: If for each match you win one copy of all the scratchcards below the winning card that are at a distance equal to the number of matches. Compute the total scratchcards that the player has at the end of the game.

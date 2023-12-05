@@ -4,9 +4,10 @@ using Printf
 include("day01/day01.jl")
 include("day02/day02.jl")
 include("day03/day03.jl")
+include("day04/day04.jl")
 
 if isempty(ARGS)
-    global day = 3
+    global day = 4
 else
     try
         global day = parse(Int, ARGS[1])
@@ -31,6 +32,10 @@ elseif day == 2
     println("-> Part 2: "*string(part_2))
 elseif day == 3
     part_1, part_2 = Day03.run("day03/input.txt")
+    println("-> Part 1: "*string(part_1))
+    println("-> Part 2: "*string(part_2))
+elseif day == 4
+    part_1, part_2 = Day04.run("day04/input.txt")
     println("-> Part 1: "*string(part_1))
     println("-> Part 2: "*string(part_2))
 else
